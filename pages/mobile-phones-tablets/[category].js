@@ -1,0 +1,62 @@
+import React from 'react'
+import { useRouter } from 'next/router'
+import Head from 'next/head'
+import fetcher from '../../lib/fetcher';
+import Spinner from '../../components/_child/spinner';
+import Error from '../../components/_child/error';
+import ListingCard from '../../components/listing/ListingCard';
+import NoDataFound from '../../components/_child/NoDataFound';
+
+const category = (context) => {
+    const router = useRouter()
+    const category_slug = router.query.category
+    const parts = router.asPath.split('-')
+
+    const { data, isLoading, isError } = fetcher('search/classifieds?category=' + category_id(category_slug))
+
+    if (isLoading) return <Spinner></Spinner>
+    if (isError) return <Error></Error>
+    if (data.length == 0) return <NoDataFound />
+    return (
+        <section className="container mx-auto">
+
+            <Head>
+                <link rel="icon" href="/favicon.ico" />
+                <title>Classifieds: Buy and sell Sell Anything Online - New &amp; Used items for sale Dobuyme ,United Arab Emirates</title>
+                <meta name="description" content="Buy & sell used cars, motorcycles, special number plates, truck vehicles, automotive parts & accessories online at cheap prices in United Arab Emirates on  and reach our automotive market of 1.6+ million buyers in the United Arab Emirates." />
+            </Head>
+            {
+
+                data && (data).map((value, index) => (
+                    <Ads data={value} key={index}></Ads>
+                ))
+
+            }
+        </section>
+    )
+}
+
+export default category
+
+function Ads({ data }) {
+    const { id, identity, breadcrumb, title, images, currency, price, year, location, ad_age, ad_condition } = data;
+    return (
+        <ListingCard key={id} id={id} identity={identity} breadcrumb={breadcrumb} title={title} images={images} currency={currency} price={price} location={location} ad_age={ad_age} ad_condition={ad_condition} />
+    )
+}
+
+function category_id(category_slug) {
+    if (category_slug == 'mobile-phone-tablet-accessories') {
+        var cat_id = 5457;
+    } else if (category_slug == 'mobile-phones') {
+        var cat_id = 5458;
+    } else if (category_slug == 'tablets') {
+        var cat_id = 5459;
+    } else if (category_slug == 'other-mobile-phones-tablets') {
+        var cat_id = 5460;
+    } else {
+        var cat_id = 0;
+    }
+
+    return cat_id
+}

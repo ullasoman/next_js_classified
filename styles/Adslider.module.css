@@ -1,0 +1,33 @@
+.ad_slider_box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.asb_container {
+    height: 33rem;
+}
+
+.asb_prev,
+.asb_next {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.asb_prev {
+    left: 2%;
+}
+
+.asb_next {
+    right: 2%;
+}
+
+.thumb_container {
+    padding: 5px;
+}

@@ -1,0 +1,82 @@
+.job_list_container {
+    width: 100%;
+    position: relative;
+    border: 1px solid rgb(247, 247, 248);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 8px;
+    border-radius: 6px;
+    margin: 24px auto;
+    padding: 16px;
+}
+
+.jlc_box {
+    max-width: unset;
+    position: relative;
+    height: auto;
+    flex-direction: column;
+}
+
+.jlc_box_content {
+    -moz-box-flex: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+
+.jlc_bc_title {
+    padding: 2px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jlc_bc_title>h5 {
+    display: inline-block;
+    letter-spacing: 0em;
+    margin-bottom: 6px;
+    color: rgb(35, 38, 42);
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.company_name {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #277BC0;
+    font-weight: 500;
+}
+
+.salary_range {
+    margin-bottom: 8px;
+    color: rgb(35, 38, 42);
+}
+
+.summary_wrapper {
+    width: calc(100% - 72px);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    height: 20px;
+    margin-bottom: 8px;
+}
+
+.sw_key_fact {
+    line-height: normal;
+    position: relative;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    color: rgb(35, 38, 42);
+    margin-right: 13px;
+    gap: 5px;
+}
+
+.posted_on {
+    color: rgb(132, 136, 142);
+}

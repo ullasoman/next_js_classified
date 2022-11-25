@@ -1,0 +1,239 @@
+.ad_listing_container {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgb(238, 240, 241);
+    margin-bottom: 24px;
+}
+
+.ad_box {
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+}
+
+.ad_image_container {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 321px;
+    height: 214px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, transparent 100%);
+    transition: all 0.2s ease-out 0s;
+    z-index: 1;
+}
+
+.ad_fav_btn {
+    z-index: 2;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    font-size: 24px;
+    background: none;
+    border: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.ad_img {
+    background: url("https://dbzproperty-a.akamaihd.net/property/desktop/latest/assets/9894775d.png") center center no-repeat;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 321px;
+    height: 214px;
+}
+
+.img_count {
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+}
+
+.ad_img img {
+    width: 321px;
+    height: 214px;
+    object-fit: cover;
+    display: block;
+}
+
+.listing_info_container {
+    flex: 1 1 0%;
+    position: relative;
+    padding-left: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.listing_breadcrumbs {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.listing_title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
+}
+
+.featured_badge {
+    height: 20px;
+    min-width: 71px;
+    z-index: 2;
+    position: absolute;
+    display: inline-flex;
+    top: 2px;
+    right: 0px;
+    left: initial;
+}
+
+.badge_black {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 4px 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    margin-right: 4px;
+    background-color: rgb(0, 0, 0);
+}
+
+.listing_price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.listing_price_attrs {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+    margin-right: 5px;
+    color: var(--gray);
+}
+
+.listing_price_amount {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.listing_time {
+    display: block;
+    font-size: 14px;
+    line-height: 1.54;
+    color: var(--gray);
+}
+
+.listing_key_facts {
+    display: flex;
+    gap: 10px;
+}
+
+.listing_key_fact {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: var(--gray);
+}
+
+.listing_key_fact>svg {
+    margin-right: 6px;
+}
+
+.listing_location {
+    width: 75%;
+    display: flex;
+    font-size: 14px;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+    gap: 5px;
+    color: var(--gray);
+}
+
+.listing_actions {
+    min-height: 36px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.list_item_cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.list_item_cta button {
+    font-size: 15px;
+    font-weight: 600;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    padding: 2px 20px;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 34px;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.list_item_cta button>svg {
+    font-size: 18px;
+    margin-inline-end: 5px;
+}
+
+button.ad_chat {
+    border: 1px solid #008DCA;
+    color: #008dca;
+    box-shadow: 0 1px 4px #008dca3d;
+}
+
+button.ad_call {
+    border: 1px solid #ff0018;
+    color: #ff0018;
+    box-shadow: 0 1px 4px #ff00183d;
+}
+
+.agent_logo {
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid rgb(239, 240, 241);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 8px;
+    min-width: 124px;
+    min-height: 108px;
+}
+
+.agent_logo_image {
+    max-height: 100px;
+    max-width: 108px;
+    object-fit: contain;
+    border-radius: 4px;
+}

@@ -1,0 +1,259 @@
+.banner_slider {
+  padding: 1.25rem 0;
+  padding-bottom: 0;
+}
+
+.ads_banner {
+  border-radius: 8px;
+}
+
+.ads_banner_thumb {
+  height: 100px;
+  width: 100px;
+}
+
+/* */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Popular Searches */
+.adBox {
+  border-radius: 5px;
+  padding-bottom: 1px;
+  box-shadow: 0 3px 10px #0000001a;
+}
+
+.abHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 5px;
+  color: #fff;
+  border-bottom: 1px solid #f7f7f7;
+  box-sizing: border-box;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  position: relative;
+}
+
+.abCategoriesIcon {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background: #F2F9FC;
+  border-radius: 50%;
+  box-shadow: #00000008 0 4px 16px;
+}
+
+.abTitle {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.abTitle h5 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b3b3b;
+  margin: 5px;
+}
+
+.abBody {
+  padding: 10px 0;
+  margin-inline-start: 15px;
+}
+
+.abBody ul li {
+  margin: 5px 0;
+}
+
+.abBody ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #646464;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.abBody .view_more {
+  margin-top: 10px;
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+/* Popular Searches */
+
+/* Trending */
+
+.ps_heading {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  color: #1a1a1a;
+  padding: 20px 0;
+}
+
+.higlight_title {
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  background-image: linear-gradient(to right, #ffffff 0%, #ffdba1 100%);
+}
+
+.deals_card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px 15px 5px 5px;
+  color: #1a1a1a;
+  transition: all .3s linear;
+  box-shadow: 0 3px 10px #b7b7b78a;
+}
+
+.deals_img_container {
+  position: relative;
+  width: 100%;
+  height: 125px;
+  background: #f8f8f8;
+}
+
+.adsImage {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+}
+
+.deals_price_with_off {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+  margin-inline-start: 10px;
+  color: #007bff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+label.deal_price {
+  font-size: 19px;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.deals_price_with_off span {
+  font-size: 15px;
+  color: grey;
+  margin-inline-end: 4px;
+}
+
+.deal_price>span {
+  font-size: 15px;
+  margin-inline-end: 2px;
+}
+
+.deal_item_title {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.deal_item_title h2 {
+  font-size: 14px;
+  line-height: 20px;
+  color: gray;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0;
+}
+
+.free_delivery {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  align-items: center;
+  margin: 10px;
+  gap: 5px;
+  color: slategrey;
+}
+
+/* Popular Searches */
