@@ -6,7 +6,7 @@ import styles from '../../styles/Home.module.css'
 const PopularSearches = () => {
     return (
         <section className='m-0'>
-            <h2 className={styles.ps_heading}>Popular Searches in UAE</h2>
+            <h2 className={styles.ps_heading}>Popular Searches in UAE Edited</h2>
             <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-5'>
                 {Vehicles()}
                 {propertySale()}
